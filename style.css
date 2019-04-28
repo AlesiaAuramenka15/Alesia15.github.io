@@ -1,0 +1,94 @@
+* {
+    box-sizing:border-box;
+}
+
+.div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1vw;
+    height: 10vw;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(50,2vw);
+    grid-template-rows: repeat(66,2vw) 1fr;
+    background: url(Parisien.JPEG) no-repeat;
+    background-position: right top;
+    background-size: cover;
+}
+
+h3{
+   font-size: 1.5vw; 
+}
+
+h4{
+    font-size: 1vw;
+    background-color: beige;
+    padding-left: 10px;
+}
+
+.a1{
+    grid-column: 1;
+    box-shadow: 0px 0px 0px 2px #f09ea8;
+    background:linear-gradient(to bottom,#394d75 5%, #0f1c5d 100%);
+    background-color:#0d1b73;
+    border:1px solid hsl(225, 69%, 28%);
+    color:#ffffff;
+    text-shadow:0px 1px 0px #294d66;
+}
+
+.a2{
+    grid-column: 2;
+    box-shadow: 0px 0px 0px 2px #e9e5e5;   
+    background:linear-gradient(to bottom, #e7e7e7 5%, #dccccc 100%);
+    background-color:#f9f5fa;  
+    border:1px solid #e8e5e9;
+    color:#f8f7f8;
+    text-shadow:0px 1px 0px #ceccce;
+}
+
+.a3{
+    grid-column: 3;
+    box-shadow: 0px 0px 0px 2px #dd3145;   
+	background:linear-gradient(to bottom, #ff8585 5%, #d60000 100%);
+    background-color:#ffffff;  
+    border:1px solid #a12323;
+    color:#6a1f2c;
+    text-shadow:0px 1px 0px #ffffff;
+}
+
+ .a1, .a2, .a3 { 
+    height: 100%;
+    width:  100%;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d43535', endColorstr='#ffc4d7',GradientType=0);
+	border-radius:10px;
+	display:flex;
+	cursor:pointer;
+	font-family:Arial;
+	font-size:19px;
+    text-decoration:none;
+    justify-content: center;
+    align-items: center;
+}
+.a1:hover, .a2:hover, .a3:hover {	
+	background:linear-gradient(to bottom, #0f1c5d  5%, #394d75 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc4d7', endColorstr='#d43535',GradientType=0);
+	background-color:#1e4193;
+}
+.a1:active, .a2:active, .a3:active {
+	position:relative;
+}
+
+#button1, #text1, #text2, #text3, #text4, #button2, #text5, #text6, #text7, #text8, #button3, #text9, #text10, #text11, #text12{
+    display: none;
+}
+
+img{
+    clip-path: circle(37% at 50% 50%);
+}
+
+img:hover{
+    clip-path: none;
+}
